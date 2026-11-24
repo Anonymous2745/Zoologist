@@ -1,0 +1,303 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('Forest-Background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Tahoma, Geneva, sans-serif;
+    color: #edf7f0;
+}
+
+.navbar {
+    background: #fff;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar_container {
+    background-color: #204e3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+    position: relative;
+}
+
+#navbar_logo {
+    background-color: #66fb02;
+    background-image: linear-gradient(to top, #86e50bc7 0%, #c5e414f8 100%);
+    background-size: 100%;
+    font-family: Impact, Charcoal, sans-serif;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.navbar_menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    gap: 8px;
+}
+
+.navbar_item {
+    height: 80px;
+}
+
+.navbar_links {
+    color: #0dd9be;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 16px;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.navbar_links:hover {
+    color: #00ffdd;
+    background-color: #173b2b;
+}
+
+.animalslist {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 18px 60px;
+    gap: 24px;
+}
+
+.animalbox {
+    width: min(100%, 980px);
+    background: rgba(7, 22, 17, 0.72);
+    border: 1px solid rgba(189, 238, 205, 0.18);
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(8, 20, 14, 0.28);
+    padding: 26px 22px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    text-align: left;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.animalbox:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 34px rgba(8, 20, 14, 0.35);
+    border-color: rgba(189, 238, 205, 0.35);
+}
+
+.animalbox__img {
+    width: 260px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 14px;
+    margin: 0;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(135deg, rgba(31, 91, 69, 0.9), rgba(83, 145, 90, 0.85));
+    border: 2px solid rgba(255, 255, 255, 0.18);
+}
+
+.animalbox h1 {
+    font-size: 1.8rem;
+    margin: 0 0 12px 0;
+    line-height: 1.2;
+    flex: 1;
+}
+
+.animalbox p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #dfeee9;
+    margin: 0;
+    flex: 2;
+}
+
+.animalbox a {
+    color: #207349;
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+.animal-quiz {
+    width: min(100%, 980px);
+    background: rgba(7, 22, 17, 0.72);
+    border: 1px solid rgba(189, 238, 205, 0.18);
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(8, 20, 14, 0.28);
+    padding: 28px;
+    text-align: left;
+}
+
+.animal-quiz h1 {
+    color: #e7f9a8;
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+}
+
+.animal-quiz__intro {
+    color: #dfeee9;
+    margin-bottom: 20px;
+}
+
+.quiz-question {
+    border: 1px solid rgba(189, 238, 205, 0.18);
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 14px;
+}
+
+.quiz-question legend {
+    color: #f1f8a8;
+    font-weight: 700;
+    padding: 0 8px;
+}
+
+.quiz-question label {
+    display: block;
+    margin: 10px 8px;
+    color: #edf7f0;
+}
+
+.quiz-question input {
+    margin-right: 8px;
+}
+
+.quiz-submit {
+    border: 0;
+    border-radius: 8px;
+    background: #66bfa3;
+    color: #10251b;
+    font-weight: 700;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+.quiz-submit:hover {
+    background: #83d6ba;
+}
+
+.quiz-result {
+    min-height: 24px;
+    margin-top: 16px;
+    color: #e7f9a8;
+    font-weight: 700;
+}
+
+@media (max-width: 800px) {
+    .navbar_container {
+        padding: 0 20px;
+    }
+
+    .navbar_togglemenu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+        gap: 4px;
+        padding: 10px;
+    }
+
+    .navbar_togglemenu .bar {
+        width: 28px;
+        height: 3px;
+        background: #fff;
+        border-radius: 2px;
+        transition: transform 0.25s ease, opacity 0.25s ease;
+    }
+
+    .navbar_menu {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background: #204e3a;
+        flex-direction: column;
+        list-style: none;
+        padding: 12px 0;
+        box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+        z-index: 999;
+    }
+
+    .navbar_menu.active {
+        display: flex;
+    }
+
+    .navbar_item {
+        width: 100%;
+        height: auto;
+    }
+
+    .navbar_links {
+        text-align: left;
+        justify-content: flex-start;
+        padding: 14px 20px;
+        width: 100%;
+        display: block;
+        color: #dffdf6;
+    }
+
+    .navbar_togglemenu.is-active .bar:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+    }
+
+    .navbar_togglemenu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navbar_togglemenu.is-active .bar:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+
+    .animalslist {
+        gap: 22px;
+    }
+
+    .animalbox {
+        flex-direction: column;
+        max-width: 95vw;
+        text-align: center;
+        padding: 20px 18px;
+    }
+
+    .animalbox__img {
+        width: 100%;
+        max-width: 100%;
+        height: 220px;
+    }
+
+    .animalbox h1,
+    .animalbox p {
+        text-align: center;
+    }
+}

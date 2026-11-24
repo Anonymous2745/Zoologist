@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zoologist: Orangutan</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="navbar_container">
+                <a href="index.html" id="navbar_logo">Zoologist</a>
+                <div class="navbar_togglemenu" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar_menu">
+                    <li class="navbar_item"><a href="index.html" class="navbar_links">Home</a></li>
+                    <li class="navbar_item"><a href="animals.html" class="navbar_links">Animals</a></li>
+                    <li class="navbar_item"><a href="actions.html" class="navbar_links">Actions</a></li>
+                    <li class="navbar_item"><a href="feedback.html" class="navbar_links">Feedback</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="animal-detail">
+            <section class="animal-hero">
+                <img src="orangutan.jpeg" alt="Orangutan" class="animal-hero__image">
+                <p class="animal-status">IUCN status: Critically Endangered</p>
+                <h1>Orangutan</h1>
+                <p class="animal-scientific-name">Pongo</p>
+                <p>
+                    Orangutans are highly intelligent great apes found only on the islands of
+                    Borneo and Sumatra. As fruit-eaters and seed dispersers, they help rainforest
+                    plants spread and regenerate. Their populations are declining because
+                    deforestation, fires, palm-oil development and other land conversion destroy
+                    the forest habitat on which they depend.
+                </p>
+            </section>
+
+            <section class="statistics-grid" aria-labelledby="orangutan-statistics">
+                <h2 id="orangutan-statistics">Recent population statistics</h2>
+                <div class="stat-card">
+                    <strong>About 104,700</strong>
+                    <span>Bornean orangutans estimated in the wild</span>
+                </div>
+                <div class="stat-card">
+                    <strong>About 13,846</strong>
+                    <span>Sumatran orangutans estimated in the wild</span>
+                </div>
+                <div class="stat-card">
+                    <strong>Fewer than 800</strong>
+                    <span>Tapanuli orangutans estimated in the wild</span>
+                </div>
+                <p class="statistics-source">
+                    Latest widely published estimates: WWF species data and IUCN assessments,
+                    updated through 2023.
+                </p>
+            </section>
+        </main>
+        <script src="app.js"></script>
+    </body>
+</html>

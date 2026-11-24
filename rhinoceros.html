@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zoologist: Rhinoceros</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="navbar_container">
+                <a href="index.html" id="navbar_logo">Zoologist</a>
+                <div class="navbar_togglemenu" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar_menu">
+                    <li class="navbar_item"><a href="index.html" class="navbar_links">Home</a></li>
+                    <li class="navbar_item"><a href="animals.html" class="navbar_links">Animals</a></li>
+                    <li class="navbar_item"><a href="actions.html" class="navbar_links">Actions</a></li>
+                    <li class="navbar_item"><a href="feedback.html" class="navbar_links">Feedback</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="animal-detail">
+            <section class="animal-hero">
+                <img src="rhinoceros.jpg" alt="Rhinoceros" class="animal-hero__image">
+                <p class="animal-status">IUCN status: Varies by species</p>
+                <h1>Rhinoceros</h1>
+                <p class="animal-scientific-name">Rhinocerotidae</p>
+                <p>
+                    Rhinoceroses are large herbivores with tough skin and one or two horns.
+                    They shape grasslands and forests by grazing, spreading seeds and creating
+                    water and wallowing sites used by other animals. Rhino species remain
+                    vulnerable to poaching for illegal horn trade and to the loss of habitat
+                    across Africa and Asia.
+                </p>
+            </section>
+
+            <section class="statistics-grid" aria-labelledby="rhino-statistics">
+                <h2 id="rhino-statistics">Recent population statistics</h2>
+                <div class="stat-card">
+                    <strong>About 15,752</strong>
+                    <span>southern white rhinos, the largest surviving population</span>
+                </div>
+                <div class="stat-card">
+                    <strong>About 6,487</strong>
+                    <span>black rhinos estimated in the wild</span>
+                </div>
+                <div class="stat-card">
+                    <strong>About 4,014</strong>
+                    <span>greater one-horned rhinos estimated in the wild</span>
+                </div>
+                <div class="stat-card">
+                    <strong>Only about 76</strong>
+                    <span>Javan rhinos remain in the wild</span>
+                </div>
+                <div class="stat-card">
+                    <strong>Only 34-47</strong>
+                    <span>Sumatran rhinos are estimated to remain</span>
+                </div>
+                <p class="statistics-source">
+                    Latest widely published estimates: IUCN African and Asian Rhino Specialist
+                    Groups and the International Rhino Foundation, 2023-2024.
+                </p>
+            </section>
+        </main>
+        <script src="app.js"></script>
+    </body>
+</html>

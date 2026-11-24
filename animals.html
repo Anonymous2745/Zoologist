@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zoologist: Endangered-Animals</title>
+        <link rel="stylesheet" href="stylesanimals.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="navbar_container">
+                <a href="index.html" id="navbar_logo">Zoologist</a>
+                <div class="navbar_togglemenu" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div> 
+                <ul class="navbar_menu">
+                    <li class="navbar_item">
+                        <a href="index.html" class="navbar_links"> Home </a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="animals.html" class="navbar_links"> Animals </a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="actions.html" class="navbar_links"> Actions </a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="feedback.html" class="navbar_links"> Feedback </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+     
+    <div class="animalslist">
+        <a href="tiger.html" class="animalbox">
+            <img src="tiger.jpeg" alt="Tiger" class="animalbox__img">
+            <h1 style="color: #f4b942;">Tiger</h1>
+            <p>Tigers are powerful cats threatened by poaching and habitat loss.</p>
+        </a>
+        <a href="orangutan.html" class="animalbox">
+            <img src="orangutan.jpeg" alt="Orangutan" class="animalbox__img">
+            <h1 style="color: #9a5d2d;">Orangutan</h1>
+            <p>Orangutans are intelligent primates facing deforestation and shrinking habitats.</p>
+        </a>
+        <a href="rhinoceros.html" class="animalbox">
+            <img src="rhinoceros.jpg" alt="Rhinoceros" class="animalbox__img">
+            <h1 style="color: #8ddf7d;">Rhinoceros</h1>
+            <p>Rhinos are large horned mammals endangered by poaching and land loss.</p>
+        </a>
+
+        <section class="animal-quiz" id="animal-quiz">
+            <h1>Endangered Animals Quiz</h1>
+            <p class="animal-quiz__intro">Test what you learned about these three animals.</p>
+            <form id="animal-quiz-form">
+                <fieldset class="quiz-question">
+                    <legend>1. Which animal is the largest living cat?</legend>
+                    <label><input type="radio" name="question1" value="tiger" required> Tiger</label>
+                    <label><input type="radio" name="question1" value="orangutan"> Orangutan</label>
+                    <label><input type="radio" name="question1" value="rhinoceros"> Rhinoceros</label>
+                </fieldset>
+
+                <fieldset class="quiz-question">
+                    <legend>2. Which animal is found only on Borneo and Sumatra?</legend>
+                    <label><input type="radio" name="question2" value="tiger" required> Tiger</label>
+                    <label><input type="radio" name="question2" value="orangutan"> Orangutan</label>
+                    <label><input type="radio" name="question2" value="rhinoceros"> Rhinoceros</label>
+                </fieldset>
+
+                <fieldset class="quiz-question">
+                    <legend>3. Which animal has one or two horns?</legend>
+                    <label><input type="radio" name="question3" value="tiger" required> Tiger</label>
+                    <label><input type="radio" name="question3" value="orangutan"> Orangutan</label>
+                    <label><input type="radio" name="question3" value="rhinoceros"> Rhinoceros</label>
+                </fieldset>
+
+                <button type="submit" class="quiz-submit">Check Answers</button>
+                <p class="quiz-result" id="quiz-result" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </div>
+    <script src="app.js"></script>
+    </body>
+</html>

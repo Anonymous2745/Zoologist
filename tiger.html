@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zoologist: Tiger</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="navbar_container">
+                <a href="index.html" id="navbar_logo">Zoologist</a>
+                <div class="navbar_togglemenu" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar_menu">
+                    <li class="navbar_item"><a href="index.html" class="navbar_links">Home</a></li>
+                    <li class="navbar_item"><a href="animals.html" class="navbar_links">Animals</a></li>
+                    <li class="navbar_item"><a href="actions.html" class="navbar_links">Actions</a></li>
+                    <li class="navbar_item"><a href="feedback.html" class="navbar_links">Feedback</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="animal-detail">
+            <section class="animal-hero">
+                <img src="tiger.jpeg" alt="Tiger" class="animal-hero__image">
+                <p class="animal-status">IUCN status: Endangered</p>
+                <h1>Tiger</h1>
+                <p class="animal-scientific-name">Panthera tigris</p>
+                <p>
+                    Tigers are the largest living cats and solitary predators that use forests,
+                    grasslands and mangrove swamps across Asia. They help keep ecosystems
+                    balanced by regulating prey populations. Tigers are threatened mainly by
+                    habitat loss and fragmentation, poaching for illegal wildlife trade, and
+                    conflict with people.
+                </p>
+            </section>
+
+            <section class="statistics-grid" aria-labelledby="tiger-statistics">
+                <h2 id="tiger-statistics">Recent population statistics</h2>
+                <div class="stat-card">
+                    <strong>About 5,574</strong>
+                    <span>estimated wild tigers worldwide</span>
+                </div>
+                <div class="stat-card">
+                    <strong>13</strong>
+                    <span>countries still have wild tiger populations</span>
+                </div>
+                <div class="stat-card">
+                    <strong>About 95%</strong>
+                    <span>of the historical tiger range has been lost</span>
+                </div>
+                <p class="statistics-source">
+                    Latest published estimate: 2023 Global Tiger Forum report.
+                    Historical range estimate: WWF.
+                </p>
+            </section>
+        </main>
+        <script src="app.js"></script>
+    </body>
+</html>

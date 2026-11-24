@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zoologist: Feedback</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="navbar_container">
+                <a href="index.html" id="navbar_logo">Zoologist</a>
+                <div class="navbar_togglemenu" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar_menu">
+                    <li class="navbar_item"><a href="index.html" class="navbar_links">Home</a></li>
+                    <li class="navbar_item"><a href="animals.html" class="navbar_links">Animals</a></li>
+                    <li class="navbar_item"><a href="actions.html" class="navbar_links">Actions</a></li>
+                    <li class="navbar_item"><a href="feedback.html" class="navbar_links">Feedback</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="feedback-page">
+            <section class="feedback-intro">
+                <p class="animal-status">Share your view</p>
+                <h1>Feedback</h1>
+                <p>
+                    Tell us what you learned or suggest an improvement to the Zoologist
+                    website. Required fields are marked with an asterisk.
+                </p>
+            </section>
+
+            <form class="feedback-form" id="feedback-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name <span>(optional)</span></label>
+                        <input type="text" id="name" name="name" maxlength="80" autocomplete="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email <span>(optional)</span></label>
+                        <input type="email" id="email" name="email" maxlength="120" autocomplete="email">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="topic">Feedback about <span>*</span></label>
+                        <select id="topic" name="topic" required>
+                            <option value="">Choose a topic</option>
+                            <option value="website">Website content</option>
+                            <option value="tiger">Tiger page</option>
+                            <option value="orangutan">Orangutan page</option>
+                            <option value="rhinoceros">Rhinoceros page</option>
+                            <option value="actions">Government actions page</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="rating">Overall rating <span>*</span></label>
+                        <select id="rating" name="rating" required>
+                            <option value="">Choose a rating</option>
+                            <option value="5">5 - Excellent</option>
+                            <option value="4">4 - Good</option>
+                            <option value="3">3 - Average</option>
+                            <option value="2">2 - Poor</option>
+                            <option value="1">1 - Very poor</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your feedback <span>*</span></label>
+                    <textarea id="message" name="message" rows="7" maxlength="1000" required placeholder="Write your feedback here..."></textarea>
+                </div>
+
+                <button type="submit" class="feedback-submit">Submit Feedback</button>
+                <p class="form-status" id="feedback-status" role="status" aria-live="polite"></p>
+            </form>
+        </main>
+        <script src="app.js"></script>
+    </body>
+</html>
